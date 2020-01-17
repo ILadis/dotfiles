@@ -1,0 +1,6 @@
+xbindkeys -f "${XDG_CONFIG_HOME}/xbindkeys/config"
+xrdb -load "${XDG_CONFIG_HOME}/X11/Xresources"
+feh --no-fehbg --bg-scale "${XDG_DATA_HOME}/wallpaper.jpg"
+gsettings set org.gnome.desktop.wm.preferences button-layout appmenu:minimize,maximize,close
+gsettings set org.gnome.metacity alt-tab-thumbnails true
+exec metacity --sm-disable

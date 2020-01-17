@@ -1,0 +1,7 @@
+[user]
+  email = mwagn4@gmail.com
+  name = Michael Wagner
+
+[core]
+  excludesfile = ~/.config/git/gitignore
+
