@@ -1,5 +1,14 @@
 notes.txt
-node_modules/
+
 *.swp
+
+node_modules/
+
 *.cache
 *.phar
+
+.classpath
+.project
+.settings/
+target/
+
