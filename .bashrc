@@ -36,6 +36,7 @@ alias pac-explicit='comm -23 <(pacman -Qeq | sort) <(pacman -Qgq base base-devel
 alias ff='firefox 2>&1 1>/dev/null &'
 alias ll='ls -val --color=auto --group-directories-first'
 
+alias steam='su -l -s /bin/bash -c "/bin/steam" steam'
 alias nginx='/usr/bin/nginx -c ~/devlop/nginx/nginx.conf -p ~/devlop/nginx'
 alias sshd="/usr/bin/sshd -f '${XDG_CONFIG_HOME}/sshd/config'"
 alias startx="/usr/bin/startx '${XDG_CONFIG_HOME}/X11/xinitrc'"
