@@ -38,6 +38,7 @@ alias ll='ls -val --color=auto --group-directories-first'
 
 alias steam='su -l -s /bin/bash -c "/bin/steam" steam'
 alias nginx='/usr/bin/nginx -c ~/devlop/nginx/nginx.conf -p ~/devlop/nginx'
+alias mvn="/usr/bin/mvn -s '${XDG_CONFIG_HOME}/maven/settings.xml'"
 alias sshd="/usr/bin/sshd -f '${XDG_CONFIG_HOME}/sshd/config'"
 alias startx="/usr/bin/startx '${XDG_CONFIG_HOME}/X11/xinitrc'"
 alias vin='TERM=xterm-color /usr/bin/vim'
