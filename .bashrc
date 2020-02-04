@@ -34,9 +34,10 @@ alias pac-files='find / -regextype posix-extended -regex ".+\.pac(new|save)" 2> 
 alias pac-explicit='comm -23 <(pacman -Qeq | sort) <(pacman -Qgq base base-devel | sort)'
 
 alias ff='firefox 2>&1 1>/dev/null &'
-alias ll='ls -val --color=auto --group-directories-first'
+alias ll='ls -vahl --color=auto --group-directories-first'
 
 alias steam='su -l -s /bin/bash -c "/bin/steam" steam'
+alias dotnet='DOTNET_CLI_TELEMETRY_OPTOUT=1 /usr/bin/dotnet'
 alias nginx='/usr/bin/nginx -c ~/devlop/nginx/nginx.conf -p ~/devlop/nginx'
 alias mvn="/usr/bin/mvn -s '${XDG_CONFIG_HOME}/maven/settings.xml'"
 alias sshd="/usr/bin/sshd -f '${XDG_CONFIG_HOME}/sshd/config'"
