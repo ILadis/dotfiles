@@ -13,3 +13,9 @@
 "eclipse"
   Shift+Mod4 + j
 
+"scrot -u"
+  Mod4 + Print
+
+"scrot -s"
+  Print + Release
+
