@@ -15,6 +15,7 @@ export PATH="${PATH}:${ANDROID_HOME}/tools/bin:${ANDROID_HOME}/platform-tools:${
 unset HISTFILE
 export LESSHISTFILE='-'
 export SQLITE_HISTORY='-'
+export NODE_REPL_HISTORY=''
 
 export HISTCONTROL='ignoreboth'
 export PS1='\n\e[32m\u@\h \e[33m\w \e[34m$(git-branch)\e[0m\n$ '
