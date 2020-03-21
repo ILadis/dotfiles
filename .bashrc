@@ -10,7 +10,7 @@ export ANDROID_HOME="${HOME}/devlop/android-sdk"
 export EDITOR='vim'
 export TERM='xterm-256color'
 
-export PATH="${PATH}:${ANDROID_HOME}/tools/bin:${ANDROID_HOME}/platform-tools:${HOME}/devlop/php"
+export PATH="${PATH}:${ANDROID_HOME}/cmdline-tools/latest/bin:${ANDROID_HOME}/platform-tools:${HOME}/devlop/php"
 
 unset HISTFILE
 export LESSHISTFILE='-'
