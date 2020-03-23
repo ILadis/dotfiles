@@ -7,10 +7,14 @@ export XAUTHORITY="${XDG_RUNTIME_DIR}/Xauthority"
 export VIMINIT=":source ${XDG_CONFIG_HOME}/vim/vimrc"
 
 export ANDROID_HOME="${HOME}/devlop/android-sdk"
+
 export EDITOR='vim'
 export TERM='xterm-256color'
 
 export PATH="${PATH}:${ANDROID_HOME}/cmdline-tools/latest/bin:${ANDROID_HOME}/platform-tools:${HOME}/devlop/php"
+
+export MOZ_ACCELERATED=1
+export MOZ_WEBRENDER=1
 
 unset HISTFILE
 export LESSHISTFILE='-'
