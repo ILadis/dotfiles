@@ -13,8 +13,8 @@ export TERM='xterm-256color'
 
 export PATH="${PATH}:${ANDROID_HOME}/cmdline-tools/latest/bin:${ANDROID_HOME}/platform-tools:${HOME}/devlop/php"
 
-export MOZ_ACCELERATED=1
-export MOZ_WEBRENDER=1
+#export MOZ_ACCELERATED=1
+#export MOZ_WEBRENDER=1
 
 unset HISTFILE
 export LESSHISTFILE='-'
