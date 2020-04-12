@@ -41,7 +41,7 @@ alias pac-explicit='comm -23 <(pacman -Qeq | sort) <(pacman -Qgq base base-devel
 alias ff='firefox 2>&1 1>/dev/null &'
 alias ll='ls -vahl --color=auto --group-directories-first'
 
-alias steam='su -l -s /bin/bash -c "/bin/steam" steam'
+alias steam='su -l -s /bin/bash -c "/bin/env PULSE_SERVER=unix:/tmp/steam-audio steam" steam'
 alias dotnet='DOTNET_CLI_TELEMETRY_OPTOUT=1 /usr/bin/dotnet'
 alias nginx='/usr/bin/nginx -c ~/devlop/nginx/nginx.conf -p ~/devlop/nginx'
 alias mvn="/usr/bin/mvn -s '${XDG_CONFIG_HOME}/maven/settings.xml'"
