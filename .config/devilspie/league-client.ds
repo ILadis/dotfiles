@@ -1,0 +1,5 @@
+(if (is (window_name) "League of Legends")
+  (begin
+    (geometry "+625+20")
+  )
+)

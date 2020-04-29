@@ -1,7 +1,24 @@
-xbindkeys -f "${XDG_CONFIG_HOME}/xbindkeys/config"
+if [ -d '/etc/X11/xinit/xinitrc.d' ]; then
+  for file in "/etc/X11/xinit/xinitrc.d/"* ; do
+    [ -x "${file}" ] && . "${file}"
+  done
+  unset file
+fi
+
 xrdb -load "${XDG_CONFIG_HOME}/X11/Xresources"
-feh --no-fehbg --bg-scale "${XDG_DATA_HOME}/wallpaper.jpg"
+xbindkeys -f "${XDG_CONFIG_HOME}/xbindkeys/config"
+
+if type devilspie; then
+  devilspie "${XDG_CONFIG_HOME}/devilspie"/*.ds &
+fi
+
+if [[ -f "${XDG_DATA_HOME}/wallpaper-tile.jpg" ]]; then
+  feh --no-fehbg --bg-tile "${XDG_DATA_HOME}/wallpaper-tile.jpg"
+else
+ feh --no-fehbg --bg-scale "${XDG_DATA_HOME}/wallpaper.jpg"
+fi
+
 gsettings set org.gnome.desktop.wm.preferences button-layout appmenu:minimize,maximize,close
 gsettings set org.gnome.metacity alt-tab-thumbnails true
-start-pulseaudio-x11
+
 exec metacity --sm-disable

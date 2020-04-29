@@ -1,0 +1,5 @@
+(if (is (window_name) "League of Legends (TM) Client")
+  (begin
+    (geometry "+625+95")
+  )
+)
