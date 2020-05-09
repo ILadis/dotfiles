@@ -36,7 +36,8 @@ function git-branch {
 }
 
 alias pac-files='find / -regextype posix-extended -regex ".+\.pac(new|save)" 2> /dev/null'
-alias pac-explicit='comm -23 <(pacman -Qeq | sort) <(pacman -Qgq base base-devel | sort)'
+alias pac-explicit='pacman -Qeq | sort'
+alias pac-orphans='pacman -Qtdq | sort'
 
 alias ff='firefox 2>&1 1>/dev/null &'
 alias ll='ls -vahl --color=auto --group-directories-first'
