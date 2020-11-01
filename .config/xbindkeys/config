@@ -13,6 +13,9 @@
 "eclipse"
   Shift+Mod4 + j
 
+"retroarch"
+  Shift+Mod4 + l
+
 "scrot -u"
   Mod4 + Print
 
