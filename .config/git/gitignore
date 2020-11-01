@@ -1,6 +1,7 @@
 notes.txt
 
 *.swp
+*.xcf
 
 node_modules/
 
