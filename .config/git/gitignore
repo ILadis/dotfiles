@@ -3,6 +3,7 @@ notes.txt
 *.swp
 *.xcf
 
+.temp/
 node_modules/
 
 *.cache
