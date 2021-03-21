@@ -1,6 +1,12 @@
 "termite"
   Shift+Mod4 + t
 
+"thunar"
+  Shift+Mod4 + e
+
+"pragha"
+  Shift+Mod4 + a
+
 "firefox"
   Shift+Mod4 + f
 
@@ -13,8 +19,11 @@
 "eclipse"
   Shift+Mod4 + j
 
-"retroarch"
+"retroarch -c /home/ladis/games/retroarch/retroarch.cfg"
   Shift+Mod4 + l
+
+"steam"
+  Shift+Mod4 + m
 
 "scrot -u"
   Mod4 + Print
