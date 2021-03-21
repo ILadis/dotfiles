@@ -3,6 +3,9 @@ export XDG_CONFIG_HOME="${HOME}/.config"
 export XDG_CACHE_HOME="${HOME}/.cache"
 export XDG_DATA_HOME="${HOME}/.share"
 
+export QT_FONT_DPI=80
+export QT_STYLE_OVERRIDE='adwaita'
+
 export XAUTHORITY="${XDG_RUNTIME_DIR}/Xauthority"
 export VIMINIT=":source ${XDG_CONFIG_HOME}/vim/vimrc"
 
@@ -41,7 +44,7 @@ alias pac-orphans='pacman -Qtdq | sort'
 
 alias motherboard='cat /sys/devices/virtual/dmi/id/board_{vendor,name,version}'
 alias ff='firefox 2>&1 1>/dev/null &'
-alias ll='ls -vahl --color=auto --group-directories-first'
+alias ls-a='ls -vahl --color=auto --group-directories-first'
 
 #alias steam='su -l -s /bin/bash -c "/bin/env PULSE_SERVER=unix:/tmp/steam-audio steam" steam'
 alias dotnet='DOTNET_CLI_TELEMETRY_OPTOUT=1 /usr/bin/dotnet'
