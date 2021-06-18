@@ -14,7 +14,12 @@ export ANDROID_HOME="${HOME}/devlop/android-sdk"
 export EDITOR='vim'
 export TERM='xterm-256color'
 
-export PATH="${PATH}:${ANDROID_HOME}/cmdline-tools/latest/bin:${ANDROID_HOME}/platform-tools:${HOME}/devlop/php"
+export DEVKITPRO='/opt/devkitpro'
+export DEVKITARM="${DEVKITPRO}/devkitARM"
+export DEVKITPPC="${DEVKITPRO}/devkitPPC"
+export MINGWSDLPC='/home/ladis/devlop/mingw/SDL2/x86_64-w64-mingw32/lib/pkgconfig/'
+
+export PATH="${PATH}:${ANDROID_HOME}/cmdline-tools/latest/bin:${ANDROID_HOME}/platform-tools:${HOME}/devlop/php:${DEVKITPRO}/tools/bin"
 
 #export MOZ_ACCELERATED=1
 #export MOZ_WEBRENDER=1
@@ -26,6 +31,11 @@ export NODE_REPL_HISTORY=''
 
 export HISTCONTROL='ignoreboth'
 export PS1='\n\e[32m\u@\h \e[33m\w \e[34m$(git-branch)\e[0m\n$ '
+
+function launch {
+  "${1}" 2>&1 1>/dev/null &
+  disown
+}
 
 function git-branch {
   local branch
@@ -43,8 +53,9 @@ alias pac-explicit='pacman -Qeq | sort'
 alias pac-orphans='pacman -Qtdq | sort'
 
 alias motherboard='cat /sys/devices/virtual/dmi/id/board_{vendor,name,version}'
-alias ff='firefox 2>&1 1>/dev/null &'
+
 alias ls-a='ls -vahl --color=auto --group-directories-first'
+alias rl-hid='modprobe -r usbhid; modprobe usbhid'
 
 #alias steam='su -l -s /bin/bash -c "/bin/env PULSE_SERVER=unix:/tmp/steam-audio steam" steam'
 alias dotnet='DOTNET_CLI_TELEMETRY_OPTOUT=1 /usr/bin/dotnet'

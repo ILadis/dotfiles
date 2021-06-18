@@ -22,8 +22,14 @@
 "retroarch -c /home/ladis/games/retroarch/retroarch.cfg"
   Shift+Mod4 + l
 
+"dolphin-emu"
+  Shift+Mod4 + d
+
 "steam"
   Shift+Mod4 + m
+
+"tiled"
+  Shift+Mod4 + i
 
 "scrot -u"
   Mod4 + Print
